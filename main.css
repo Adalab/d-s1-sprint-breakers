@@ -66,7 +66,28 @@ h1 {
   color: white;
   text-align: center;
 }
-
+/* 768px HEADER*/
+@media all and (min-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: #099d8d;
+  }
+  .group-name {
+    width: 60%;
+    align-items:center;
+    justify-content: flex-start;
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+  .menu-container{
+    background-color: #099d8d;
+    height: 60px;
+    text-align: right;
+    flex-grow: 2;
+  }
+}
 .movil {
   width: 100%;
 }
@@ -94,7 +115,14 @@ h1 {
   margin-right: 15px;
   transform: translateY(-50%);
 }
-
+@media all and (min-width: 768px) {
+  .claim{
+    opacity: 0.8;
+    margin-left: 45px;
+    margin-right: 282px;
+    transform: translateY(-100%)
+  }
+}
 .claim-text {
   color: #000000;
   font-family: 'OpenSans-SemiBold', sans-serif;
