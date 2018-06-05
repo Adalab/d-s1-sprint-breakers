@@ -66,6 +66,7 @@ h1 {
   color: white;
   text-align: center;
 }
+<<<<<<< HEAD
 /* 768px HEADER*/
 @media all and (min-width: 768px) {
   .header{
@@ -88,6 +89,10 @@ h1 {
     flex-grow: 2;
   }
 }
+=======
+
+/* MAIN */
+>>>>>>> 6d9d019eee203e9a02fd7bc0233fce49d5c732a5
 .movil {
   width: 100%;
 }
@@ -152,10 +157,9 @@ h1 {
 .dafo {
   background-color: #F1F1F1;
   padding-bottom: 45px;
-}
-.fortalezas {
   position: relative;
 }
+
 .triangulo {
   position: absolute;
   left: 50%;
@@ -177,6 +181,7 @@ h1 {
   padding-top: 30px;
   font-size: 22px;
 }
+
 .debilidades {
   margin-top: 30px;
   background-color: #F1F1F1;
@@ -191,6 +196,7 @@ h1 {
   text-align: center;
   font-size: 22px;
 }
+
 .quienesSomos {
   margin-top: 30px;
 }
@@ -257,7 +263,59 @@ span {
   display: inline-block;
   color: #499d8d;
 }
+/* MEDIAQUERIES MAIN */
+@media all and (min-width:768px) {
+  .imagen-claim {
+  height: 421px;
+}
 
+  .claim {
+transform: translateY(-100%);
+opacity: 0.7;
+width: 441px;
+padding: 15px 30px 15px 30px;
+margin-left: 45px;
+}
+
+  .equipo-main {
+margin-top: 45px;
+}
+
+  .textoequipo {
+  margin-bottom: 60px;
+}
+
+  .dafo {
+  display: flex;
+}
+
+  .fortalezas {
+margin: 45px 15px 60px 15px;
+padding: 0;
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+  .fortalezas h2 {
+margin: 0px 0px 15px 0px;
+padding: 0;
+}
+
+  .debilidades {
+margin: 45px 15px 60px 15px;
+padding: 0;
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+  .debilidades h2 {
+margin: 0px 0px 15px 0px;
+padding: 0;
+}
+}
+/* FOOTER */
 .pie{
   text-align: center;
 }
