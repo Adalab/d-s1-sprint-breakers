@@ -413,6 +413,7 @@ span {
     align-content: flex-end;
     list-style: none;
   }
+
   .titulo{
     position: absolute;
     left: 0;
@@ -422,5 +423,193 @@ span {
     position: absolute;
     left: 0;
   }
+}
 
+/* PAG CONTACTO */
+
+.contacto {
+  margin: 15px;
+}
+
+.contacto-main {
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 15px 0;
+}
+
+.contacto-h {
+  color: #499d8d;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 24px;
+
+}
+
+.contacto-text {
+  color: #54585A;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.rule {
+  color: #545854;
+  font-family: 'Open Sans', sans-serif, '400';
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin: 15px 0 45px 0;
+}
+
+.asterisco {
+  color: #14d9c4;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+/* formulario */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.form-box {
+  margin-top: 15px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-family: 'OpenSans', sans-serif;
+  color: #54585a;
+  font-size: 14px;
+  line-height: 19px;
+  display: inline-block;
+}
+
+.label__phone{
+  margin-bottom: 10px;
+}
+
+.input {
+  height: 45px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.input__message {
+  height: 105px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #b8b8b9;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b8b8b9;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #b8b8b9;
+}
+
+.send-button {
+  margin-top: 30px;
+  height: 45px;
+  border: 0;
+  background-color: #499d8d;
+  border-radius: 5px;
+  width: 100%;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 22px;
+  text-align: center;
+}
+
+@media all and (min-width:768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacto {
+    width: 442px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario {
+    width: 442px;
+  }
+  .send-button {
+    width: 206px;
+    align-self: flex-end;
+  }
+}
+
+@media all and (min-width:1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacto {
+    width: 601px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario {
+    width: 601px;
+  }
+
+  .send-button {
+    width: 300px;
+    align-self: flex-end;
+  }
+
+  .mail-tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input__mail {
+    width: 395px;
+    margin-right: 44px;
+  }
+
+  .input__tel {
+    width: 162px;
+  }
 }
