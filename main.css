@@ -92,7 +92,6 @@ h1 {
 =======
 
 /* MAIN */
->>>>>>> 6d9d019eee203e9a02fd7bc0233fce49d5c732a5
 .movil {
   width: 100%;
 }
@@ -133,11 +132,23 @@ h1 {
   font-family: 'OpenSans-SemiBold', sans-serif;
   font-size: 18px;
 }
-
+@media all and (min-width: 768px) {
+  .claim-text{
+    display: inline;
+    margin: 30px 15px 30px 15px;
+  }
+}
 .equipo-main {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
+}
+@media all and (min-width: 768px) {
+  .introduccion{
+    padding: 0px; 
+    margin-left: 30px;
+    margin-right: 30px
+  }
 }
 
 .equipoh2, .quiensomosh2{
