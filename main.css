@@ -66,7 +66,7 @@ h1 {
   color: white;
   text-align: center;
 }
-<<<<<<< HEAD
+
 /* 768px HEADER*/
 @media all and (min-width: 768px) {
   .header{
@@ -88,8 +88,18 @@ h1 {
     text-align: right;
     flex-grow: 2;
   }
+  .button {
+    padding-left: 20px;
+    width: inherit;
+  }
+  .menu{
+    display: flex;
+    padding-right: 45px;
+    justify-content: flex-end;
+  }
 }
-=======
+@media all and (min-width: 1200px) {
+}
 
 /* MAIN */
 .movil {
@@ -145,7 +155,7 @@ h1 {
 }
 @media all and (min-width: 768px) {
   .introduccion{
-    padding: 0px; 
+    padding: 0px;
     margin-left: 30px;
     margin-right: 30px
   }
