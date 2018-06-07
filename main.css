@@ -101,12 +101,10 @@ h1 {
 }
 
 .main-pic {
-  height: 421px;
-  width: 100%;
-}
-
-.header-pic {
-  width: 100%;
+  background-image: url(assets/foto-header.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
   height: 421px;
 }
 
@@ -253,6 +251,10 @@ padding: 0;
 .quienesSomos {
   margin-top: 30px;
 }
+
+.quiensomosh2 {
+margin-top: 30px;
+}
 .adalaber {
   display: flex;
   flex-direction: column;
@@ -266,6 +268,10 @@ padding: 0;
   height: 180px;
   border: 5px solid #B8B8B9;
   border-radius: 8px;
+}
+
+.position-img {
+text-align: center;
 }
 p {
   align-items: center;
