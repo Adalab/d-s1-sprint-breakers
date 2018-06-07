@@ -67,6 +67,31 @@ h1 {
   text-align: center;
 }
 
+/* 768px HEADER*/
+@media all and (min-width: 768px) {
+  .header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: #099d8d;
+  }
+  .group-name {
+    width: 60%;
+    align-items:center;
+    justify-content: flex-start;
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+  .menu-container{
+    background-color: #099d8d;
+    height: 60px;
+    text-align: right;
+    flex-grow: 2;
+  }
+}
+
+
+/* MAIN */
 .movil {
   width: 100%;
 }
@@ -76,12 +101,10 @@ h1 {
 }
 
 .main-pic {
-  height: 421px;
-  width: 100%;
-}
-
-.header-pic {
-  width: 100%;
+  background-image: url(assets/foto-header.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
   height: 421px;
 }
 
@@ -99,6 +122,20 @@ h1 {
   color: #000000;
   font-family: 'OpenSans-SemiBold', sans-serif;
   font-size: 18px;
+}
+/* MEDIAQUERIES GIRO */
+@media all and (min-width:768px) {
+  .imagen-claim {
+    height: 421px;
+  }
+
+  .claim {
+    transform: translateY(-100%);
+    opacity: 0.7;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 45px;
+  }
 }
 
 .equipo-main {
@@ -120,14 +157,25 @@ h1 {
   line-height: 24px;
   text-align: center;
 }
+/* MEDIAQUERIES EQUIPO */
+@media all and (min-width:768px) {
+  .equipo-main {
+    margin-top: 45px;
+  }
+
+  .textoequipo {
+    margin-bottom: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
 
 .dafo {
   background-color: #F1F1F1;
   padding-bottom: 45px;
-}
-.fortalezas {
   position: relative;
 }
+
 .triangulo {
   position: absolute;
   left: 50%;
@@ -149,6 +197,7 @@ h1 {
   padding-top: 30px;
   font-size: 22px;
 }
+
 .debilidades {
   margin-top: 30px;
   background-color: #F1F1F1;
@@ -163,9 +212,49 @@ h1 {
   text-align: center;
   font-size: 22px;
 }
+/* MEDIAQUERIES DAFO */
+@media all and (min-width:768px) {
+  .dafo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .fortalezas {
+    margin: 45px 15px 60px 45px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .fortalezas h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+
+  .debilidades {
+    margin: 45px 45px 60px 15px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .debilidades h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+}
+
 .quienesSomos {
   margin-top: 30px;
 }
+
+.quiensomosh2 {
+  margin-top: 30px;
+}
+
 .adalaber {
   display: flex;
   flex-direction: column;
@@ -179,6 +268,10 @@ h1 {
   height: 180px;
   border: 5px solid #B8B8B9;
   border-radius: 8px;
+}
+
+.position-img {
+  text-align: center;
 }
 p {
   align-items: center;
@@ -229,7 +322,25 @@ span {
   display: inline-block;
   color: #499d8d;
 }
+/* MEDIAQUERIES QUIENESSOMOS*/
+@media all and (min-width:768px) {
+  .quiensomosh2 {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
 
+  .adalaber {
+    display: inline-block;
+  }
+
+  .img {
+    padding: 0;
+    margin: 0px 30px;
+    width: 205px;
+    height: 205px;
+  }
+}
+/* FOOTER */
 .pie{
   text-align: center;
 }
@@ -273,7 +384,13 @@ span {
   }
 
   .actions{
+<<<<<<< HEAD
     text-align: right;
+=======
+    height: 164px;
+    width: auto;
+    align-content: flex-end;
+>>>>>>> d4998111dc0e914aaf6cd5aaf9fb25ca94c5c471
     list-style: none;
   }
   .titulo{
