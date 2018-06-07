@@ -377,28 +377,33 @@ span {
   }
   .pie{
     display: flex;
-    width: 100%;
-    height: 164px;
-    flex-direction: row;
+    position:relative;
+    padding: 30px;
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 
-
-
   .actions{
+<<<<<<< HEAD
+    text-align: right;
+=======
     height: 164px;
     width: auto;
     align-content: flex-end;
+>>>>>>> d4998111dc0e914aaf6cd5aaf9fb25ca94c5c471
     list-style: none;
   }
   .titulo{
-    position: absolute;
-    left: 0;
+position: absolute;
 
   }
+
   .logoweb{
-    position: absolute;
-    left: 0;
+
+
+
+
+
   }
 
 }
