@@ -49,7 +49,7 @@ h1 {
   height: 100%;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .button {
@@ -57,8 +57,7 @@ h1 {
   font-weight: bold;
   font-family: 'Rubik-Medium', sans-serif;
   text-align: center;
-  display: inline-block;
-  width: 100%;
+  display: inline;
 }
 
 .link-menu {
@@ -87,15 +86,24 @@ h1 {
   .menu-container {
     background-color: #099d8d;
     height: 60px;
-    text-align: right;
-    flex-grow: 2;
+    text-align: center;
+  }
+}
+@media all and (min-width: 1200px) {
+  .group-name {
+    margin: 0 138px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-container {
+    padding-right: 138px;
   }
 }
 /* MAIN */
-.movil {
-  width: 100%;
-}
-
 .imagen-claim {
   height: 465px;
 }
@@ -130,12 +138,26 @@ h1 {
     height: 421px;
   }
 
+  .main-pic {
+    background-position-y: 33%;
+    height: 421px;
+  }
+
   .claim {
     transform: translateY(-100%);
     opacity: 0.7;
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .imagen-claim {
+    height: 550px;
+  }
+
+  .main-pic {
+    height: 550px;
   }
 }
 /*EQUIPO*/
@@ -173,7 +195,7 @@ h1 {
   }
 }
 @media all and (min-width: 1200px) {
-  .introduccion {
+  .equipo {
     width: 601px;
     margin-left: auto;
     margin-right: auto;
@@ -269,7 +291,8 @@ h1 {
 }
 /*QUIENES SOMOS*/
 .quienesSomos {
-  margin-top: 30px;
+  width: 924px;
+  margin: 30px auto 60px;
 }
 
 .quiensomosh2 {
@@ -469,6 +492,8 @@ p {
     margin-top: 25px;
     text-align: right;
     width: auto;
+    text-align: right;
+    list-style-type: none;
     align-content: flex-end;
     list-style: none;
   }
