@@ -92,9 +92,6 @@ h1 {
 
 
 /* MAIN */
-@media all and (min-width:1200px) {
-
-}
 .imagen-claim {
   height: 465px;
 }
@@ -128,6 +125,11 @@ h1 {
     height: 421px;
   }
 
+  .main-pic {
+    background-position-y: 33%;
+    height: 421px;
+  }
+
   .claim {
     transform: translateY(-100%);
     opacity: 0.7;
@@ -135,6 +137,14 @@ h1 {
     padding: 15px 30px 15px 30px;
     margin-left: 45px;
   }
+}
+@media all and (min-width:1200px) {
+  .imagen-claim {
+    height: 550px;
+  }
+.main-pic {
+  height: 550px;
+}
 }
 /*EQUIPO*/
 .equipo-main {
@@ -452,7 +462,7 @@ span {
     align-content: flex-end;
     list-style: none;
   }
-  
+
   .titulo{
     position: absolute;
   }

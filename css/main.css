@@ -79,12 +79,6 @@ h1 {
     text-align: right;
     flex-grow: 2; } }
 /* MAIN */
-<<<<<<< HEAD
-=======
-.movil {
-  width: 100%; }
-
->>>>>>> c3e4f7ad4cdbef24c8409952b1d5a19e7f063145
 .imagen-claim {
   height: 465px; }
 
@@ -114,12 +108,22 @@ h1 {
   .imagen-claim {
     height: 421px; }
 
+  .main-pic {
+    background-position-y: 33%;
+    height: 421px; }
+
   .claim {
     transform: translateY(-100%);
     opacity: 0.7;
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px; } }
+@media all and (min-width: 1200px) {
+  .imagen-claim {
+    height: 550px; }
+
+  .main-pic {
+    height: 550px; } }
 /*EQUIPO*/
 .equipo-main {
   text-align: center;
@@ -149,11 +153,7 @@ h1 {
     margin-left: 45px;
     margin-right: 45px; } }
 @media all and (min-width: 1200px) {
-<<<<<<< HEAD
-  .introduccion {
-=======
   .equipo {
->>>>>>> c3e4f7ad4cdbef24c8409952b1d5a19e7f063145
     width: 601px;
     margin-left: auto;
     margin-right: auto; } }
