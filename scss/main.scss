@@ -170,7 +170,7 @@ h1 {
   }
 }
 @media all and (min-width:1200px) {
-  .introduccion {
+  .equipo {
     width: 601px;
     margin-left: auto;
     margin-right: auto;
@@ -448,9 +448,12 @@ span {
     text-align: right;
     height: 164px;
     width: auto;
+    text-align: right;
+    list-style-type: none;
     align-content: flex-end;
     list-style: none;
   }
+
   .titulo{
     position: absolute;
   }
