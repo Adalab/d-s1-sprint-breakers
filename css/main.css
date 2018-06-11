@@ -43,15 +43,14 @@ h1 {
   height: 100%;
   align-items: center;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around; }
 
 .button {
   font-size: 15px;
   font-weight: bold;
   font-family: 'Rubik-Medium', sans-serif;
   text-align: center;
-  display: inline-block;
-  width: 100%; }
+  display: inline; }
 
 .link-menu {
   text-decoration: none;
@@ -76,8 +75,17 @@ h1 {
   .menu-container {
     background-color: #099d8d;
     height: 60px;
-    text-align: right;
-    flex-grow: 2; } }
+    text-align: center; } }
+@media all and (min-width: 1200px) {
+  .group-name {
+    margin: 0 138px; }
+
+  .menu {
+    display: flex;
+    justify-content: space-around; }
+
+  .menu-container {
+    padding-right: 138px; } }
 /* MAIN */
 .movil {
   width: 100%; }
