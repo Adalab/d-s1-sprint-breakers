@@ -1,52 +1,510 @@
-/*
-Error: Invalid CSS after "...xt-align: right": expected "{", was ";"
-        on line 452 of /home/adalaber/Projects/GroupProject/sprint1/d-s1-sprint-breakers/scss/main.scss
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-447:     margin-top: 25px;
-448:     text-align: right;
-449:     height: 164px;
-450:     width: auto;
-451: <<<<<<< HEAD
-452:     text-align: right;
-453:     list-style-type: none;
-454: =======
-455:     align-content: flex-end;
-456:     list-style: none;
-457:   }
+body {
+  height: 100%;
+  width: 100%;
+}
 
-Backtrace:
-/home/adalaber/Projects/GroupProject/sprint1/d-s1-sprint-breakers/scss/main.scss:452
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:421:in `media_directive'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:22:in `load'
-/usr/share/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...xt-align: right\": expected \"{\", was \";\"\A         on line 452 of /home/adalaber/Projects/GroupProject/sprint1/d-s1-sprint-breakers/scss/main.scss\A \A 447:     margin-top: 25px;\A 448:     text-align: right;\A 449:     height: 164px;\A 450:     width: auto;\A 451: <<<<<<< HEAD\A 452:     text-align: right;\A 453:     list-style-type: none;\A 454: =======\A 455:     align-content: flex-end;\A 456:     list-style: none;\A 457:   }"; }
+.header {
+  width: 100%;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+}
+
+.group-name {
+  background-color: #099d8d;
+  opacity: 0.9;
+  height: 60px;
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+  font-family: 'Rubik-Medium', sans-serif;
+}
+
+.menu-container {
+  background-color: #14d9c4;
+  opacity: 0.9;
+  height: 45px;
+  width: 100%;
+  order: 1;
+}
+
+.menu {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Rubik-Medium', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.link-menu {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/* 768px HEADER*/
+@media all and (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: #099d8d;
+  }
+
+  .group-name {
+    width: 60%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+
+  .menu-container {
+    background-color: #099d8d;
+    height: 60px;
+    text-align: right;
+    flex-grow: 2;
+  }
+}
+/* MAIN */
+.movil {
+  width: 100%;
+}
+
+.imagen-claim {
+  height: 465px;
+}
+
+.main-pic {
+  background-image: url(../assets/foto-header.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 421px;
+}
+
+.claim {
+  background-color: #ffffff;
+  height: auto;
+  /* border: solid black 1px; */
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  transform: translateY(-50%);
+}
+
+.claim-text {
+  color: #000000;
+  font-family: 'OpenSans-SemiBold', sans-serif;
+  font-size: 18px;
+}
+
+/* MEDIAQUERIES GIRO */
+@media all and (min-width: 768px) {
+  .imagen-claim {
+    height: 421px;
+  }
+
+  .claim {
+    transform: translateY(-100%);
+    opacity: 0.7;
+    width: 441px;
+    padding: 15px 30px 15px 30px;
+    margin-left: 45px;
+  }
+}
+/*EQUIPO*/
+.equipo-main {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.equipoh2, .quiensomosh2 {
+  color: #099d8d;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.textoequipo {
+  color: #54585A;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* MEDIAQUERIES EQUIPO */
+@media all and (min-width: 768px) {
+  .equipo-main {
+    margin-top: 45px;
+  }
+
+  .textoequipo {
+    margin-bottom: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .introduccion {
+    width: 601px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*FORTALEZAS Y DEBILIDADES*/
+.dafo {
+  background-color: #F1F1F1;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.triangulo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-left: 15px solid #F1F1F1;
+  border-right: 15px solid #F1F1F1;
+}
+
+.fortalezas h2 {
+  color: #099D8D;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 22px;
+}
+
+.debilidades {
+  margin-top: 30px;
+  background-color: #F1F1F1;
+  padding: 0 15px;
+}
+
+.debilidades h2 {
+  color: #099D8D;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* MEDIAQUERIES DAFO */
+@media all and (min-width: 768px) {
+  .dafo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .fortalezas {
+    margin: 45px 15px 60px 45px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .fortalezas h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+
+  .debilidades {
+    margin: 45px 45px 60px 15px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .debilidades h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+}
+@media all and (min-width: 1200px) {
+  .fortalezas {
+    margin-right: 20px;
+  }
+
+  .debilidades {
+    margin-left: 20px;
+  }
+}
+/*QUIENES SOMOS*/
+.quienesSomos {
+  margin-top: 30px;
+}
+
+.quiensomosh2 {
+  margin-top: 30px;
+}
+
+.adalaber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 15px 15px 15px;
+}
+
+.adalaber2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 15px 15px 15px;
+}
+
+.img {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #B8B8B9;
+  border-radius: 8px;
+}
+
+.position-img {
+  text-align: center;
+}
+
+p {
+  align-items: center;
+  color: #54585A;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  padding: 0px 15px 15px;
+}
+
+.name {
+  align-items: center;
+  color: #000000;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+}
+
+.listamedia {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.noitemmedia {
+  float: right;
+  margin-right: 10px;
+}
+
+.itemmedia::before {
+  position: absolute;
+  right: 25px;
+  top: 8px;
+  width: 3px;
+  height: 3px;
+  background-color: #499d8d;
+  border-radius: 10px;
+  content: '';
+}
+
+.fab, .fas {
+  color: #499d8d;
+}
+
+.punto {
+  display: inline-block;
+  color: #499d8d;
+}
+
+/* MEDIAQUERIES QUIENESSOMOS*/
+@media all and (min-width: 768px) {
+  .quiensomosh2 {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .img {
+    padding: 0;
+    margin: 0px 30px;
+    width: 205px;
+    height: 205px;
+  }
+
+  .container-adalaber {
+    display: flex;
+  }
+
+  .container-adalaber2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .adalaber {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 30px 60px 0px;
+    padding: 0;
+  }
+
+  .adalaber2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px 0px 60px 30px;
+  }
+
+  .p1 {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .p2 {
+    text-align: right;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .margin768 {
+    margin: 0;
+  }
+}
+@media all and (min-width: 1200px) {
+  .img {
+    height: 278px;
+    width: 278px;
+  }
+}
+/* FOOTER */
+.pie {
+  text-align: center;
+}
+
+.titulo {
+  color: #B8B8B9;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text {
+  color: #54585A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line: 20px 1.4;
+  list-style: none;
+  padding: 0;
+}
+
+.enlace {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linea {
+  background-color: #B8B8B9;
+  margin: 30px 0px 30px 0px;
+}
+
+@media all and (min-width: 768px) {
+  .linea {
+    margin: 0;
+  }
+
+  .pie {
+    display: flex;
+    position: relative;
+    padding: 0px 30px 49px 30px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .actions {
+    box-sizing: border-box;
+    margin-top: 25px;
+    text-align: right;
+    width: auto;
+    align-content: flex-end;
+    list-style: none;
+  }
+
+  .titulo {
+    position: absolute;
+  }
+
+  .enlace {
+    text-align: right;
+  }
+
+  .titulo {
+    position: absolute;
+    padding: 0;
+    left: 30px;
+    top: 30px;
+  }
+
+  .logo {
+    position: relative;
+  }
+
+  .logofoto {
+    position: absolute;
+    top: 59px;
+    bottom: 60px;
+  }
+
+  .text {
+    align-items: center;
+    color: #54585A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
