@@ -381,18 +381,37 @@ span {
   .pie {
     display: flex;
     position: relative;
-    padding: 30px;
+    padding: 0px 30px 60px 30px;
     flex-direction: row-reverse;
     justify-content: space-between; }
 
   .actions {
+    margin-top: 25px;
     text-align: right;
     height: 164px;
     width: auto;
+    text-align: right;
+    list-style-type: none;
     align-content: flex-end;
     list-style: none; }
 
   .titulo {
-    position: absolute; } }
+    position: absolute; }
+
+  .enlace {
+    text-align: right; }
+
+  .titulo {
+    position: absolute;
+    left: 30px;
+    top: 30px; }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+  .logoweb {
+    margin-top: 15px 0px 60px 30px; } }
 
 /*# sourceMappingURL=main.css.map */
