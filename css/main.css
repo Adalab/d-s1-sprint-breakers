@@ -79,9 +79,6 @@ h1 {
     text-align: right;
     flex-grow: 2; } }
 /* MAIN */
-.movil {
-  width: 100%; }
-
 .imagen-claim {
   height: 465px; }
 

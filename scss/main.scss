@@ -92,10 +92,9 @@ h1 {
 
 
 /* MAIN */
-.movil {
-  width: 100%;
-}
+@media all and (min-width:1200px) {
 
+}
 .imagen-claim {
   height: 465px;
 }
