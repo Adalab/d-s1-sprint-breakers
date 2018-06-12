@@ -115,7 +115,7 @@ h1 {
 
 
 /* MAIN */
-.movil {
+.main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -443,9 +443,14 @@ p {
     width: 439px;
   }
 }
+
+
 /* FOOTER */
 .pie{
+  width: 100%;
   text-align: center;
+  border-top: 2px solid #B8B8B9;
+  padding-top: 30px;
 }
 .titulo{
   color:#B8B8B9;
@@ -457,28 +462,22 @@ p {
   color: #54585A;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  line:20px (1.4);
+  line-height:20px;
   list-style: none;
   padding: 0;
 }
-
-
 .enlace{
   display:block;
   text-align: center;
   text-decoration: none;
 }
-
-.linea {
-  background-color: #B8B8B9;
-  margin: 30px 0px 30px 0px;
+.logofoto{
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
-
-
 @media all and (min-width:768px){
   .linea{
     margin: 0;
-
   }
   .pie{
     display: flex;
@@ -486,8 +485,8 @@ p {
     padding: 0px 30px 49px 30px;
     flex-direction: row-reverse;
     justify-content: space-between;
-  }
 
+  }
   .actions{
     box-sizing: border-box;
     margin-top: 25px;
@@ -498,29 +497,27 @@ p {
     align-content: flex-end;
     list-style: none;
   }
-
+  .titulo{
+    position: absolute;
+  }
   .enlace{
     text-align: right;
   }
-
   .titulo{
     position: absolute;
     padding: 0;
     left: 30px;
     top: 30px;
   }
-
-
   .logo{
     position: relative;
-
   }
   .logofoto {
     position: absolute;
+    margin:0;
     top:59px;
     bottom:60px;
   }
-
   .text{
     align-items: center;
     color: #54585A;
@@ -528,7 +525,6 @@ p {
     font-size: 14px;
     line-height: 30px;
   }
-
 }
 
 @media all and (min-width:1200px) {
