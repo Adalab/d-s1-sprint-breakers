@@ -163,6 +163,11 @@ h1 {
     margin-left: 45px;
   }
 }
+@media all and (min-width:1200px) {
+  .claim {
+    margin-left: 138px;
+}
+}
 /*EQUIPO*/
 .equipo-main {
   text-align: center;
@@ -282,9 +287,11 @@ h1 {
 @media all and (min-width:1200px) {
   .fortalezas {
     margin-right: 20px;
+    margin-left: 138px;
   }
   .debilidades {
     margin-left: 20px;
+    margin-right: 138px;
   }
 }
 /*QUIENES SOMOS*/
@@ -419,10 +426,15 @@ p {
   }
 }
 @media all and (min-width:1200px) {
-  .img {
+  .quienesSomos {
+    margin-right: 138px;
+    margin-left: 138px;
+}
+.img {
     height: 278px;
     width: 278px;
   }
+
 }
 /* FOOTER */
 .pie{
@@ -510,4 +522,11 @@ p {
     line-height: 30px;
   }
 
+}
+
+@media all and (min-width:1200px) {
+  .pie {
+    margin-right: 138px;
+    margin-left: 138px;
+}
 }

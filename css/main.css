@@ -132,6 +132,9 @@ h1 {
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px; } }
+@media all and (min-width: 1200px) {
+  .claim {
+    margin-left: 138px; } }
 /*EQUIPO*/
 .equipo-main {
   text-align: center;
@@ -235,10 +238,12 @@ h1 {
     padding: 0; } }
 @media all and (min-width: 1200px) {
   .fortalezas {
-    margin-right: 20px; }
+    margin-right: 20px;
+    margin-left: 138px; }
 
   .debilidades {
-    margin-left: 20px; } }
+    margin-left: 20px;
+    margin-right: 138px; } }
 /*QUIENES SOMOS*/
 .quienesSomos {
   margin: 30px auto 60px; }
@@ -362,6 +367,10 @@ p {
   .margin768 {
     margin: 0; } }
 @media all and (min-width: 1200px) {
+  .quienesSomos {
+    margin-right: 138px;
+    margin-left: 138px; }
+
   .img {
     height: 278px;
     width: 278px; } }
@@ -436,5 +445,9 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 30px; } }
+@media all and (min-width: 1200px) {
+  .pie {
+    margin-right: 138px;
+    margin-left: 138px; } }
 
 /*# sourceMappingURL=main.css.map */
