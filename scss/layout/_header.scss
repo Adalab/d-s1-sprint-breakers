@@ -39,3 +39,60 @@ h1 {
   display: flex;
   justify-content: space-around;
 }
+.button {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Rubik-Medium', sans-serif;
+  text-align: center;
+  display: inline;
+
+}
+
+.link-menu {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+/* 768px HEADER*/
+@media all and (min-width: 768px)
+{
+  .header{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    background-color: #099d8d;
+  }
+  .group-name {
+    width: 60%;
+    align-items:center;
+    justify-content: flex-start;
+    margin-left: 45px;
+    flex-grow: 1;
+  }
+  .menu-container{
+    background-color: #099d8d;
+    height: 60px;
+    text-align: center;
+  }
+
+  .menu {
+    margin-right: -4px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+
+  .group-name {
+    margin: 0 138px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    margin-right: -30px;
+  }
+
+  .menu-container {
+    padding-right: 138px;
+  }
+}
