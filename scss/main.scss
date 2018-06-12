@@ -21,8 +21,7 @@ body {
 .group-name {
   background-color: #099d8d;
   opacity: 0.9;
-  height: 60px;
-  width: 100%;
+  height: 60px;  width: 100%;
   margin: 0px;
   align-items: center;
   display: flex;
@@ -111,6 +110,10 @@ padding-right: 138px;
 
 
 /* MAIN */
+.movil {
+  width: 100%;
+}
+
 .imagen-claim {
   height: 465px;
 }
@@ -144,11 +147,6 @@ padding-right: 138px;
     height: 421px;
   }
 
-  .main-pic {
-    background-position-y: 33%;
-    height: 421px;
-  }
-
   .claim {
     transform: translateY(-100%);
     opacity: 0.7;
@@ -156,14 +154,6 @@ padding-right: 138px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px;
   }
-}
-@media all and (min-width:1200px) {
-  .imagen-claim {
-    height: 550px;
-  }
-.main-pic {
-  height: 550px;
-}
 }
 /*EQUIPO*/
 .equipo-main {
