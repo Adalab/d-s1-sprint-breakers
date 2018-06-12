@@ -151,8 +151,8 @@ h1 {
 }
 /* MEDIAQUERIES GIRO */
 @media all and (min-width:768px) {
-  .imagen-claim {
-    // height: 421px;
+  .main-pic {
+    background-position-y: 32%;
   }
 
   .claim {
@@ -289,7 +289,6 @@ h1 {
 }
 /*QUIENES SOMOS*/
 .quienesSomos {
-  width: 924px;
   margin: 30px auto 60px;
 }
 
@@ -479,10 +478,6 @@ p {
     list-style-type: none;
     align-content: flex-end;
     list-style: none;
-  }
-
-  .titulo{
-    position: absolute;
   }
 
   .enlace{
