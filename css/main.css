@@ -373,7 +373,15 @@ p {
 
   .img {
     height: 278px;
-    width: 278px; } }
+    width: 278px; }
+
+  .adalaber {
+    margin-left: 15px;
+    width: 439px; }
+
+  .adalaber2 {
+    margin-right: 15px;
+    width: 439px; } }
 /* FOOTER */
 .pie {
   text-align: center; }
