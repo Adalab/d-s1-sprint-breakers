@@ -38,7 +38,7 @@ h1 {
   order: 1; }
 
 .menu {
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   height: 100%;
   align-items: center;
@@ -75,18 +75,28 @@ h1 {
   .menu-container {
     background-color: #099d8d;
     height: 60px;
-    text-align: center; } }
+    text-align: center; }
+
+  .menu {
+    margin-right: -4px; } }
 @media all and (min-width: 1200px) {
   .group-name {
     margin: 0 138px; }
 
   .menu {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-right: -30px; }
 
   .menu-container {
     padding-right: 138px; } }
 /* MAIN */
+.movil {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%; }
+
 .imagen-claim {
   height: 465px; }
 
@@ -113,25 +123,12 @@ h1 {
 
 /* MEDIAQUERIES GIRO */
 @media all and (min-width: 768px) {
-  .imagen-claim {
-    height: 421px; }
-
-  .main-pic {
-    background-position-y: 33%;
-    height: 421px; }
-
   .claim {
     transform: translateY(-100%);
     opacity: 0.7;
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px; } }
-@media all and (min-width: 1200px) {
-  .imagen-claim {
-    height: 550px; }
-
-  .main-pic {
-    height: 550px; } }
 /*EQUIPO*/
 .equipo-main {
   text-align: center;
@@ -279,7 +276,7 @@ p {
   line-height: 24px;
   padding: 0px 15px 15px; }
 
-span {
+.name {
   align-items: center;
   color: #000000;
   font-family: 'OpenSans-Regular', sans-serif;
@@ -400,14 +397,14 @@ span {
   .pie {
     display: flex;
     position: relative;
-    padding: 0px 30px 60px 30px;
+    padding: 0px 30px 49px 30px;
     flex-direction: row-reverse;
     justify-content: space-between; }
 
   .actions {
+    box-sizing: border-box;
     margin-top: 25px;
     text-align: right;
-    height: 164px;
     width: auto;
     text-align: right;
     list-style-type: none;
@@ -422,15 +419,23 @@ span {
 
   .titulo {
     position: absolute;
+    padding: 0;
     left: 30px;
     top: 30px; }
 
   .logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+    position: relative; }
 
-  .logoweb {
-    margin-top: 15px 0px 60px 30px; } }
+  .logofoto {
+    position: absolute;
+    top: 59px;
+    bottom: 60px; }
+
+  .text {
+    align-items: center;
+    color: #54585A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
