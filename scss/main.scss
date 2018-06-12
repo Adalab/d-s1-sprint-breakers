@@ -322,7 +322,7 @@ p {
   line-height: 24px;
   padding: 0px 15px 15px;
 }
-span {
+.name {
   align-items: center;
   color: #000000;
   font-family: 'OpenSans-Regular', sans-serif;
@@ -457,15 +457,15 @@ span {
   .pie{
     display: flex;
     position:relative;
-    padding: 0px 30px 60px 30px;
+    padding: 0px 30px 49px 30px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
   .actions{
+    box-sizing: border-box;
     margin-top: 25px;
     text-align: right;
-    height: 164px;
     width: auto;
     text-align: right;
     list-style-type: none;
@@ -483,17 +483,28 @@ span {
 
   .titulo{
     position: absolute;
+    padding: 0;
     left: 30px;
     top: 30px;
   }
+
+
   .logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+position: relative;
+
   }
-  .logoweb {
-    margin-top: 15px 0px 60px 30px;
+  .logofoto {
+    position: absolute;
+    top:59px;
+    bottom:60px;
   }
 
+  .text{
+    align-items: center;
+    color: #54585A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+  }
 
 }
