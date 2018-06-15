@@ -1,5 +1,7 @@
 # Adalab Sprint 1 Project
-## "Spring Breakers team"
+## "Sprint Breakers team"
+
+We're the Sprint Breakers team, composed by [Esther](https://www.linkedin.com/in/esther-pato-gonzalez/), [Elísabet](https://www.linkedin.com/in/elisabet-andreu-soldado-163a41162/), [Olatz](https://www.linkedin.com/in/olatz-aranzabe/) and [Loreto](https://www.linkedin.com/in/loretovaquerofontenla/).
 
 This is our first project in Adalab.
 One week ago we didn't know what a html file was and today we are glad to show you our first webpage.
@@ -23,5 +25,3 @@ We've been working to reach a milestone every week.
     We have implemented SASS in our project and we have started to work with Gulp. We have been changing our CSS document and doing the division in partials. Also, we have added variables and mixes. During this week, we have been working more closely using GitHub and fixing issues.
 
 -Fifth week:
-
-    
