@@ -1,0 +1,18 @@
+.subtitle {
+  color: $primary-color;
+  font-family: $font-title;
+  font-weight: $weight-medium;
+  font-size: $size-xxl;
+  line-height: 45px;
+  text-align: center;
+}
+
+.p,
+.p1,
+.p2 {
+  color: $color-midtone;
+  font-family: $font-text;
+  font-weight: $weight-regular;
+  font-size: 16px;
+  line-height: 24px;
+}

@@ -1,4 +1,5 @@
 /* MAIN */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,50 +7,58 @@
   width: 100%;
 }
 
-/*EQUIPO*/
+/* EQUIPO */
+
 .equipo-main {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
-}
 
-.equipoh2, .quiensomosh2{
-  color: #099d8d;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 24px;
-  text-align: center;
-}
-.textoequipo {
-  color: #54585A;
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-}
-/* MEDIAQUERIES EQUIPO */
-@media all and (min-width:768px) {
-  .equipo-main {
+  @media all and (min-width: 768px) {
     margin-top: 45px;
   }
+}
 
-  .textoequipo {
+.equipoh2,
+.quiensomosh2 {
+   @include bigH2;
+}
+
+.textoequipo {
+  color: $primary-color;
+  font-family: $font-text;
+  font-weight: $weight-regular;
+  font-size: $size-m;
+  line-height: 24px;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
     margin-bottom: 60px;
     margin-left: 45px;
     margin-right: 45px;
   }
 }
-@media all and (min-width:1200px) {
-  .equipo {
+
+.equipo {
+  @media all and (min-width: 1200px) {
     width: 601px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/*FORTALEZAS Y DEBILIDADES*/
+
+/* FORTALEZAS Y DEBILIDADES */
+
 .dafo {
-  background-color: #F1F1F1;
+  background-color: $secondary-color;
   padding-bottom: 45px;
   position: relative;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
 }
 
 .triangulo {
@@ -59,44 +68,12 @@
   width: 0;
   height: 0;
   border-top: 15px solid white;
-  border-left: 15px solid #F1F1F1;
-  border-right: 15px solid #F1F1F1;
+  border-left: 15px solid $secondary-color;
+  border-right: 15px solid $secondary-color;
 }
 
-.fortalezas h2 {
-  color: #099D8D;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 22px;
-  line-height: 45px;
-  margin-top: 30px;
-  text-align: center;
-  padding-top: 30px;
-  font-size: 22px;
-}
-
-.debilidades {
-  margin-top: 30px;
-  background-color: #F1F1F1;
-  padding: 0 15px;
-}
-.debilidades h2 {
-  color: #099D8D;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 22px;
-  line-height: 45px;
-  margin-top: 30px;
-  text-align: center;
-  font-size: 22px;
-}
-/* MEDIAQUERIES DAFO */
-@media all and (min-width:768px) {
-  .dafo {
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-
-  .fortalezas {
+.fortalezas {
+  @media all and (min-width: 768px) {
     margin: 45px 15px 60px 45px;
     padding: 0;
     display: flex;
@@ -104,12 +81,29 @@
     width: 50%;
   }
 
-  .fortalezas h2 {
-    margin: 0px 0px 15px 0px;
+  @media all and (min-width: 1200px) {
+    margin-right: 20px;
+    margin-left: 138px;
+  }
+}
+
+
+.subtitle {
+  margin-top: 30px;
+  padding-top: 30px;
+
+  @media all and (min-width: 768px) {
+    margin: 0 0 15px 0;
     padding: 0;
   }
+}
 
-  .debilidades {
+.debilidades {
+  margin-top: 30px;
+  background-color: $secondary-color;
+  padding: 0 15px;
+
+  @media all and (min-width: 768px) {
     margin: 45px 45px 60px 15px;
     padding: 0;
     display: flex;
@@ -117,74 +111,165 @@
     width: 50%;
   }
 
-  .debilidades h2 {
-    margin: 0px 0px 15px 0px;
+  @media all and (min-width: 1200px) {
+    margin-right: 138px;
+    margin-left: 20px;
+  }
+}
+
+.subtitle {
+  margin-top: 30px;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    margin: 0 0 15px 0;
     padding: 0;
   }
 }
-@media all and (min-width:1200px) {
-  .fortalezas {
-    margin-right: 20px;
-    margin-left: 138px;
-  }
-  .debilidades {
-    margin-left: 20px;
-    margin-right: 138px;
-  }
-}
-/*QUIENES SOMOS*/
+
+/* QUIENES SOMOS */
+
 .quienesSomos {
   margin: 30px auto 60px;
+
+  @media all and (min-width: 1200px) {
+    margin-right: 138px;
+    margin-left: 138px;
+  }
 }
 
 .quiensomosh2 {
   margin-top: 30px;
+
+  @media all and (min-width: 768px) {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-right: 138px;
+    margin-left: 138px;
+  }
+}
+
+.container-adalaber {
+  @media all and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.container-adalaber2 {
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .adalaber {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 30px 60px 0;
+    padding: 0;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-left: 15px;
+    width: 439px;
+  }
 }
+
 .adalaber2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0 60px 30px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-right: 15px;
+    width: 439px;
+  }
 }
+
+.p1 {
+  @media all and (min-width: 768px) {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.p2 {
+  @media all and (min-width: 768px) {
+    text-align: right;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.margin768 {
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
 .img {
   margin-top: 30px;
   margin-bottom: 15px;
   width: 180px;
   height: 180px;
-  border: 5px solid #B8B8B9;
+  border: 5px solid $color-light-midtone;
   border-radius: 8px;
+
+  @media all and (min-width: 768px) {
+    padding: 0;
+    margin: 0 30px;
+    width: 205px;
+    height: 205px;
+  }
+
+  @media all and (min-width: 1200px) {
+    height: 278px;
+    width: 278px;
+  }
 }
 
 .position-img {
   text-align: center;
 }
+
 p {
   align-items: center;
-  color: #54585A;
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 16px;
   text-align: center;
-  line-height: 24px;
-  padding: 0px 15px 15px;
+  padding: 0 15px 15px;
 }
+
 .name {
   align-items: center;
-  color: #000000;
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 20px;
+  color: $color-dark;
+  font-family: $font-text;
+  font-weight: $weight-regular;
+  font-size: $size-xl;
   line-height: 45px;
 }
+
 .media {
   display: flex;
   justify-content: center;
 }
+
 .listamedia {
   position: relative;
   display: flex;
@@ -193,91 +278,29 @@ p {
   margin: 10px;
   padding: 0;
 }
+
 .noitemmedia {
   float: right;
   margin-right: 10px;
 }
+
 .itemmedia::before {
   position: absolute;
   right: 25px;
   top: 8px;
   width: 3px;
   height: 3px;
-  background-color: #499d8d;
+  background-color: $primary-color;
   border-radius: 10px;
   content: '';
 }
-.fab, .fas {
-  color: #499d8d;
+
+.fab,
+.fas {
+  color: $primary-color;
 }
+
 .punto {
   display: inline-block;
-  color: #499d8d;
-}
-/* MEDIAQUERIES QUIENESSOMOS*/
-@media all and (min-width:768px) {
-  .quiensomosh2 {
-    margin-top: 45px;
-    margin-bottom: 45px;
-  }
-
-  .img {
-    padding: 0;
-    margin: 0px 30px;
-    width: 205px;
-    height: 205px;
-  }
-
-  .container-adalaber {
-    display: flex;
-  }
-
-  .container-adalaber2 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .adalaber {
-    display: flex;
-    align-items: flex-start;
-    margin: 0px 30px 60px 0px;
-    padding: 0;
-  }
-  .adalaber2 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 0px 0px 60px 30px;
-  }
-  .p1 {
-    text-align: left;
-    padding: 0;
-    margin-bottom: 15px;
-  }
-  .p2 {
-    text-align: right;
-    padding: 0;
-    margin-bottom: 15px;
-  }
-  .margin768 {
-    margin: 0;
-  }
-}
-@media all and (min-width:1200px) {
-  .quienesSomos {
-    margin-right: 138px;
-    margin-left: 138px;
-  }
-  .img {
-    height: 278px;
-    width: 278px;
-  }
-  .adalaber {
-    margin-left: 15px;
-    width: 439px;
-  }
-  .adalaber2 {
-    margin-right: 15px;
-    width: 439px;
-  }
+  color: $primary-color;
 }
