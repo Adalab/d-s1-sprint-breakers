@@ -85,7 +85,7 @@ h1 {
   text-decoration: none;
   color: #fff;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }/* 768px HEADER*//* FOOTER */.pie {
   width: 100%;
   text-align: center;
