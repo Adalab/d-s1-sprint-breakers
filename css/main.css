@@ -25,7 +25,7 @@ body {
 }
 
 .group-name {
-  background-color: #099d8d;
+  background-color: #499d8d;
   opacity: 0.9;
   height: 60px;
   width: 100%;
@@ -42,9 +42,11 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #fff;
   font-size: 16px;
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .menu-container {
@@ -73,33 +75,35 @@ h1 {
 
 .button {
   font-size: 15px;
-  font-weight: bold;
-  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
   text-align: center;
   display: inline;
 }
 
 .link-menu {
   text-decoration: none;
-  color: white;
+  color: #fff;
   text-align: center;
+  text-transform: uppercase;
 }/* 768px HEADER*//* FOOTER */.pie {
   width: 100%;
   text-align: center;
-  border-top: 2px solid #B8B8B9;
+  border-top: 2px solid #b8b8b9;
   padding-top: 30px;
 }
 
 .titulo {
-  color: #B8B8B9;
-  font-family: 'Open Sans',sans-serif;
+  color: #b8b8b9;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
 .text {
-  color: #54585A;
-  font-family: 'Open Sans', sans-serif;
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
   list-style: none;
@@ -117,6 +121,7 @@ h1 {
   margin-bottom: 45px;
 }
 
+<<<<<<< HEAD
 .imagen-claim {
   height: 465px;
 }
@@ -200,6 +205,9 @@ h1 {
   font-weight: bold;
   line-height: 24px;
 }/* formulario */.formulario {
+=======
+.formulario {
+>>>>>>> 3be33d0c66534e7f2ffb47b91aed03f0d30b0eff
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,7 +215,7 @@ h1 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 15px;
+  margin: 0 15px 60px 15px;
 }
 
 .form-box {
@@ -216,7 +224,7 @@ h1 {
 
 .label {
   margin-bottom: 5px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #54585a;
   font-size: 14px;
   line-height: 19px;
@@ -229,7 +237,7 @@ h1 {
 
 .input {
   height: 45px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 22px;
   width: 100%;
@@ -238,7 +246,7 @@ h1 {
 
 .input__message {
   height: 105px;
-  font-family: 'OpenSans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 22px;
   width: 100%;
@@ -290,11 +298,95 @@ h1 {
   background-color: #499d8d;
   border-radius: 5px;
   width: 100%;
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  color: white;
+  color: #fff;
   line-height: 22px;
   text-align: center;
+}
+
+.imagen-claim {
+  height: 465px;
+}
+
+.main-pic {
+  background-image: url(../images/foto-header.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 421px;
+}
+
+.claim {
+  background-color: #fff;
+  height: auto;
+ /* border: solid black 1px; */
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.claim-text {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}/* MEDIAQUERIES GIRO */.imagen-claim--contact {
+  height: 300px;
+  width: 100%;
+}
+
+.main-pic--contact {
+  background-image: url("../images/foto-header.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.contacto {
+  margin: 15px;
+}
+
+.contacto-main {
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 15px 0;
+}
+
+.contacto-h {
+  color: #499d8d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.contacto-text p {
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.rule p {
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin: 15px 0 45px 0;
+}
+
+.asterisco {
+  color: #14d9c4;
+  font-weight: bold;
+  line-height: 24px;
 }/* MAIN */.main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,7 +555,6 @@ p {
   height: 3px;
   background-color: #499d8d;
   border-radius: 10px;
-  content: '';
 }
 
 .fab,.fas {
@@ -485,7 +576,7 @@ p {
     -ms-flex-direction: row;
     flex-direction: row;
     height: 60px;
-    background-color: #099d8d;
+    background-color: #499d8d;
   }
 
   .group-name {
@@ -503,7 +594,7 @@ p {
   }
 
   .menu-container {
-    background-color: #099d8d;
+    background-color: #499d8d;
     height: 60px;
     text-align: center;
   }
@@ -574,10 +665,21 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #54585A;
-    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    text-transform: uppercase;
     line-height: 30px;
+  }
+
+  .formulario {
+    width: 442px;
+  }
+
+  .send-button {
+    width: 206px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 
   .main-pic {
@@ -591,6 +693,10 @@ p {
     width: 441px;
     padding: 15px 30px 15px 30px;
     margin-left: 45px;
+  }
+
+  .main-pic--contact {
+    background-position-y: 32%;
   }
 
   body {
@@ -632,16 +738,6 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .formulario {
-    width: 442px;
-  }
-
-  .send-button {
-    width: 206px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
   }
 
   .equipo-main {
@@ -794,8 +890,48 @@ p {
     margin-right: 138px;
   }
 
+  .formulario {
+    width: 601px;
+    margin-bottom: 120px;
+  }
+
+  .send-button {
+    width: 300px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  .mail-tel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .input__mail {
+    width: 395px;
+    margin-right: 44px;
+  }
+
+  .input__tel {
+    width: 162px;
+  }
+
   .claim {
     margin-left: 138px;
+  }
+
+  .imagen-claim--contact {
+    height: 400px;
+  }
+
+  .main-pic--contact {
+    height: 400px;
   }
 
   body {
@@ -837,37 +973,6 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .formulario {
-    width: 601px;
-  }
-
-  .send-button {
-    width: 300px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-  }
-
-  .mail-tel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .input__mail {
-    width: 395px;
-    margin-right: 44px;
-  }
-
-  .input__tel {
-    width: 162px;
   }
 
   .equipo {
