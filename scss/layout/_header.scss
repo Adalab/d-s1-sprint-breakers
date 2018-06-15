@@ -8,7 +8,7 @@
 }
 
 .group-name {
-  background-color: #099d8d;
+  background-color: $primary-color;
   opacity: 0.9;
   height: 60px;
   width: 100%;
@@ -19,13 +19,14 @@
 }
 
 h1 {
-  color: white;
-  font-size: 16px;
-  font-family: 'Rubik-Medium', sans-serif;
+  color: $color-light;
+  font-size: $size-m;
+  font-family: $font-title;
+  font-weight: $weight-medium;
 }
 
 .menu-container {
-  background-color: #14d9c4;
+  background-color: $terciary-color;
   opacity: 0.9;
   height: 45px;
   width: 100%;
@@ -42,9 +43,10 @@ h1 {
 }
 
 .button {
-  font-size: 15px;
-  font-weight: bold;
-  font-family: 'Rubik-Medium', sans-serif;
+  font-size: $size-s;
+  font-weight: $weight-bold;
+  font-family: $font-title;
+  font-weight: $weight-medium;
   text-align: center;
   display: inline;
 
@@ -52,8 +54,9 @@ h1 {
 
 .link-menu {
   text-decoration: none;
-  color: white;
+  color: $color-light;
   text-align: center;
+  text-transform: $font-capitalize;
 }
 
 /* 768px HEADER*/
@@ -63,17 +66,17 @@ h1 {
     display: flex;
     flex-direction: row;
     height: 60px;
-    background-color: #099d8d;
+    background-color: $primary-color;
   }
   .group-name {
     width: 60%;
-    align-items:center;
+    align-items: center;
     justify-content: flex-start;
     margin-left: 45px;
     flex-grow: 1;
   }
   .menu-container{
-    background-color: #099d8d;
+    background-color: $primary-color;
     height: 60px;
     text-align: center;
   }
@@ -99,5 +102,4 @@ h1 {
 
     padding-right: 138px;
   }
-
 }
