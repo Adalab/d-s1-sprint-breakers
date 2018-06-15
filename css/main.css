@@ -248,7 +248,24 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
-}/* MEDIAQUERIES GIRO */.imagen-claim--contact {
+}/* MEDIAQUERIES GIRO */.subtitle {
+  color: #499d8d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.p,.p1,.p2 {
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.imagen-claim--contact {
   height: 300px;
   width: 100%;
 }
@@ -313,27 +330,29 @@ body {
   -ms-flex-positive: 1;
   flex-grow: 1;
   width: 100%;
-}/*EQUIPO*/.equipo-main {
+}/* EQUIPO */.equipo-main {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
 .equipoh2,.quiensomosh2 {
-  color: #099d8d;
-  font-family: 'Rubik-Medium', sans-serif;
+  color: #499d8d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
   font-size: 24px;
   text-align: center;
 }
 
 .textoequipo {
-  color: #54585A;
-  font-family: 'OpenSans-Regular', sans-serif;
+  color: #499d8d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-}/* MEDIAQUERIES EQUIPO *//*FORTALEZAS Y DEBILIDADES*/.dafo {
-  background-color: #F1F1F1;
+}/* FORTALEZAS Y DEBILIDADES */.dafo {
+  background-color: #f1f1f1;
   padding-bottom: 45px;
   position: relative;
 }
@@ -346,36 +365,25 @@ body {
   width: 0;
   height: 0;
   border-top: 15px solid white;
-  border-left: 15px solid #F1F1F1;
-  border-right: 15px solid #F1F1F1;
+  border-left: 15px solid #f1f1f1;
+  border-right: 15px solid #f1f1f1;
 }
 
-.fortalezas h2 {
-  color: #099D8D;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 22px;
-  line-height: 45px;
+.subtitle {
   margin-top: 30px;
-  text-align: center;
   padding-top: 30px;
-  font-size: 22px;
 }
 
 .debilidades {
   margin-top: 30px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   padding: 0 15px;
 }
 
-.debilidades h2 {
-  color: #099D8D;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 22px;
-  line-height: 45px;
+.subtitle {
   margin-top: 30px;
   text-align: center;
-  font-size: 22px;
-}/* MEDIAQUERIES DAFO *//*QUIENES SOMOS*/.quienesSomos {
+}/* QUIENES SOMOS */.quienesSomos {
   margin: 30px auto 60px;
 }
 
@@ -394,7 +402,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
 }
 
 .adalaber2 {
@@ -408,7 +416,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0px 15px 15px 15px;
+  padding: 0 15px 15px 15px;
 }
 
 .img {
@@ -416,7 +424,7 @@ body {
   margin-bottom: 15px;
   width: 180px;
   height: 180px;
-  border: 5px solid #B8B8B9;
+  border: 5px solid #b8b8b9;
   border-radius: 8px;
 }
 
@@ -428,20 +436,17 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #54585A;
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 16px;
   text-align: center;
-  line-height: 24px;
-  padding: 0px 15px 15px;
+  padding: 0 15px 15px;
 }
 
 .name {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #000000;
-  font-family: 'OpenSans-Regular', sans-serif;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 45px;
 }
@@ -481,7 +486,6 @@ p {
   height: 3px;
   background-color: #499d8d;
   border-radius: 10px;
-  content: '';
 }
 
 .fab,.fas {
@@ -491,7 +495,9 @@ p {
 .punto {
   display: inline-block;
   color: #499d8d;
-}/* MEDIAQUERIES QUIENESSOMOS*/@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 768px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -696,8 +702,8 @@ p {
     width: 50%;
   }
 
-  .fortalezas h2 {
-    margin: 0px 0px 15px 0px;
+  .subtitle {
+    margin: 0 0 15px 0;
     padding: 0;
   }
 
@@ -714,21 +720,14 @@ p {
     width: 50%;
   }
 
-  .debilidades h2 {
-    margin: 0px 0px 15px 0px;
+  .subtitle {
+    margin: 0 0 15px 0;
     padding: 0;
   }
 
   .quiensomosh2 {
     margin-top: 45px;
     margin-bottom: 45px;
-  }
-
-  .img {
-    padding: 0;
-    margin: 0px 30px;
-    width: 205px;
-    height: 205px;
   }
 
   .container-adalaber {
@@ -754,7 +753,7 @@ p {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin: 0px 30px 60px 0px;
+    margin: 0 30px 60px 0;
     padding: 0;
   }
 
@@ -769,7 +768,7 @@ p {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    margin: 0px 0px 60px 30px;
+    margin: 0 0 60px 30px;
   }
 
   .p1 {
@@ -786,6 +785,13 @@ p {
 
   .margin768 {
     margin: 0;
+  }
+
+  .img {
+    padding: 0;
+    margin: 0 30px;
+    width: 205px;
+    height: 205px;
   }
 }
 
@@ -912,8 +918,8 @@ p {
   }
 
   .debilidades {
-    margin-left: 20px;
     margin-right: 138px;
+    margin-left: 20px;
   }
 
   .quienesSomos {
@@ -921,9 +927,9 @@ p {
     margin-left: 138px;
   }
 
-  .img {
-    height: 278px;
-    width: 278px;
+  .quiensomosh2 {
+    margin-right: 138px;
+    margin-left: 138px;
   }
 
   .adalaber {
@@ -934,6 +940,11 @@ p {
   .adalaber2 {
     margin-right: 15px;
     width: 439px;
+  }
+
+  .img {
+    height: 278px;
+    width: 278px;
   }
 }
 

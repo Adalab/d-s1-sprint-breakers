@@ -1,0 +1,151 @@
+/* MAIN */.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}/*EQUIPO*/.equipo-main {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.equipoh2,.quiensomosh2 {
+  color: #099d8d;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.textoequipo {
+  color: #54585A;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}/*FORTALEZAS Y DEBILIDADES*/.dafo {
+  background-color: #F1F1F1;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.triangulo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid white;
+  border-left: 15px solid #F1F1F1;
+  border-right: 15px solid #F1F1F1;
+}
+
+.fortalezas h2 {
+  color: #099D8D;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 22px;
+}
+
+.debilidades {
+  margin-top: 30px;
+  background-color: #F1F1F1;
+  padding: 0 15px;
+}
+
+.debilidades h2 {
+  color: #099D8D;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media all and (min-width: 768px) {
+  .equipo-main {
+    margin-top: 45px;
+  }
+
+  .textoequipo {
+    margin-bottom: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .dafo {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .fortalezas {
+    margin: 45px 15px 60px 45px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .fortalezas h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+
+  .debilidades {
+    margin: 45px 45px 60px 15px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .debilidades h2 {
+    margin: 0px 0px 15px 0px;
+    padding: 0;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .equipo {
+    width: 601px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fortalezas {
+    margin-right: 20px;
+    margin-left: 138px;
+  }
+
+  .debilidades {
+    margin-right: 20px;
+    margin-left: 138px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
