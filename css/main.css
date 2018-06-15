@@ -86,20 +86,20 @@ h1 {
 }/* 768px HEADER*//* FOOTER */.pie {
   width: 100%;
   text-align: center;
-  border-top: 2px solid #B8B8B9;
+  border-top: 2px solid #b8b8b9;
   padding-top: 30px;
 }
 
 .titulo {
-  color: #B8B8B9;
-  font-family: 'Open Sans',sans-serif;
+  color: #b8b8b9;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
 }
 
 .text {
-  color: #54585A;
-  font-family: 'Open Sans', sans-serif;
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 20px;
   list-style: none;
@@ -130,7 +130,7 @@ h1 {
 }
 
 .claim {
-  background-color: #ffffff;
+  background-color: #fff;
   height: auto;
  /* border: solid black 1px; */
   padding: 15px;
@@ -141,8 +141,9 @@ h1 {
 }
 
 .claim-text {
-  color: #000000;
-  font-family: 'OpenSans-SemiBold', sans-serif;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   font-size: 18px;
 }/* MEDIAQUERIES GIRO */.contacto {
   margin: 15px;
@@ -567,9 +568,10 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #54585A;
-    font-family: 'Open Sans', sans-serif;
+    color: #54585a;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    text-transform: uppercase;
     line-height: 30px;
   }
 

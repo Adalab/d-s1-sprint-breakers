@@ -3,19 +3,19 @@
 .pie{
   width: 100%;
   text-align: center;
-  border-top: 2px solid #B8B8B9;
+  border-top: 2px solid $color-light-midtone;
   padding-top: 30px;
 }
 .titulo{
-  color:#B8B8B9;
-  font-family: 'Open Sans',sans-serif;
-  font-size: 14px;
+  color: $color-light-midtone;
+  font-family: $font-text;
+  font-size: $size-xs;
   line-height: 20px;
 }
 .text{
-  color: #54585A;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  color: $color-midtone;
+  font-family: $font-text;
+  font-size: $size-xs;
   line-height:20px;
   list-style: none;
   padding: 0;
@@ -74,9 +74,10 @@
   }
   .text{
     align-items: center;
-    color: #54585A;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    color: $color-midtone;
+    font-family: $font-text;
+    font-size: $size-xs;
+    text-transform: $font-uppercase;
     line-height: 30px;
   }
 }

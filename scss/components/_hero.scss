@@ -11,7 +11,7 @@
 }
 
 .claim {
-  background-color: #ffffff;
+  background-color: $color-light;
   height: auto;
   /* border: solid black 1px; */
   padding: 15px;
@@ -21,9 +21,10 @@
 }
 
 .claim-text {
-  color: #000000;
-  font-family: 'OpenSans-SemiBold', sans-serif;
-  font-size: 18px;
+  color: $color-dark;
+  font-family: $font-text;
+  font-weight: $weight-semibold;
+  font-size: $size-l;
 }
 /* MEDIAQUERIES GIRO */
 @media all and (min-width:768px) {
