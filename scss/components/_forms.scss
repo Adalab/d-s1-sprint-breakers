@@ -1,0 +1,106 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 60px 15px;
+}
+
+.form-box {
+  margin-top: 15px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-family: $font-text;
+  color: $color-midtone;
+  font-size: $size-xs;
+  line-height: 19px;
+  display: inline-block;
+}
+
+.label__phone{
+  margin-bottom: 10px;
+}
+
+.input {
+  height: 45px;
+  font-family: $font-text;
+  font-size: $size-xs;
+  line-height: 22px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.input__message {
+  height: 105px;
+  font-family: $font-text;
+  font-size: $size-xs;
+  line-height: 22px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-light-midtone;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color-light-midtone;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color-light-midtone;
+}
+
+.send-button {
+  margin-top: 30px;
+  height: 45px;
+  border: 0;
+  background-color: $primary-color;
+  border-radius: 5px;
+  width: 100%;
+  font-family: $font-text;
+  font-weight: $weight-bold;
+  font-size: $size-m;
+  color: $color-light;
+  line-height: 22px;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .formulario {
+    width: 442px;
+  }
+
+  .send-button {
+    width: 206px;
+    align-self: flex-end;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .formulario {
+    width: 601px;
+    margin-bottom: 120px;
+  }
+
+  .send-button {
+    width: 300px;
+    align-self: flex-end;
+  }
+
+  .mail-tel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input__mail {
+    width: 395px;
+    margin-right: 44px;
+  }
+
+  .input__tel {
+    width: 162px;
+  }
+}
