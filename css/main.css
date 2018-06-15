@@ -248,8 +248,13 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
-}/* MEDIAQUERIES GIRO */.main-pic--contact {
-  background-image: url("../../images/foto-header.jpg");
+}/* MEDIAQUERIES GIRO */.imagen-claim--contact {
+  height: 300px;
+  width: 100%;
+}
+
+.main-pic--contact {
+  background-image: url("../images/foto-header.jpg");
   background-size: cover;
   background-position-x: center;
   background-repeat: no-repeat;
@@ -615,6 +620,10 @@ p {
     margin-left: 45px;
   }
 
+  .main-pic--contact {
+    background-position-y: 32%;
+  }
+
   body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -840,6 +849,10 @@ p {
 
   .claim {
     margin-left: 138px;
+  }
+
+  .imagen-claim--contact {
+    height: 400px;
   }
 
   .main-pic--contact {
