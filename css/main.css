@@ -121,93 +121,7 @@ h1 {
   margin-bottom: 45px;
 }
 
-<<<<<<< HEAD
-.imagen-claim {
-  height: 465px;
-}
-
-.main-pic {
-  background-image: url(../images/foto-header.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  height: 421px;
-}
-
-.claim {
-  background-color: #ffffff;
-  height: auto;
- /* border: solid black 1px; */
-  padding: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.claim-text {
-  color: #000000;
-  font-family: 'OpenSans-SemiBold', sans-serif;
-  font-size: 18px;
-}/* MEDIAQUERIES GIRO */.subtitle {
-  color: #499d8d;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 45px;
-  text-align: center;
-}
-
-.p,.p1,.p2 {
-  color: #54585a;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.contacto {
-  margin: 15px;
-}
-
-.contacto-main {
-  text-align: center;
-  width: 100%;
-  margin: 30px 0 15px 0;
-}
-
-.contacto-h {
-  color: #499d8d;
-  font-family: 'Rubik-Medium', sans-serif;
-  font-size: 24px;
-}
-
-.contacto-text {
-  color: #54585A;
-  font-family: 'OpenSans-Regular', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  margin: 0;
-}
-
-.rule {
-  color: #545854;
-  font-family: 'Open Sans', sans-serif, '400';
-  font-size: 12px;
-  line-height: 24px;
-  text-align: center;
-  margin: 15px 0 45px 0;
-}
-
-.asterisco {
-  color: #14d9c4;
-  font-weight: bold;
-  line-height: 24px;
-}/* formulario */.formulario {
-=======
 .formulario {
->>>>>>> 3be33d0c66534e7f2ffb47b91aed03f0d30b0eff
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,7 +248,24 @@ h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
-}/* MEDIAQUERIES GIRO */.imagen-claim--contact {
+}/* MEDIAQUERIES GIRO */.subtitle {
+  color: #499d8d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.p,.p1,.p2 {
+  color: #54585a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.imagen-claim--contact {
   height: 300px;
   width: 100%;
 }
