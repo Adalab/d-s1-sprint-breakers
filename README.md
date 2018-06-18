@@ -24,6 +24,7 @@ We have been working to reach a milestone every week.
 
 - Fourth week:
 
-  >  We implemented SASS in our project and we started to work with Gulp. We changed our CSS file and split it into partial files. Also, we added variables and mixes. During this week, we worded more closely using GitHub and fixing issues.
+  >  We implemented SASS in our project and we started to work with Gulp. We changed our CSS file and split it into partial files. Also, we added variables and mixes. During this week, we worked more closely using GitHub and fixing issues. We added a section displayed with grid.
 
 - Fifth week:
+  > We did a couple of animations in the header of our project and we added some effects with Hover in the links of the footer. We spent most of the time preparing the presentation with Prezi and preparing it to be ready to present it in front of our public.
