@@ -859,6 +859,10 @@ p {
     margin-left: 138px;
   }
 
+  .claim-text {
+    font-size: 24px;
+  }
+
   .imagen-claim--contact {
     height: 400px;
   }
