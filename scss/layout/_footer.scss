@@ -20,6 +20,10 @@
   line-height:20px;
   list-style: none;
   padding: 0;
+  
+  &:hover {
+    color: $primary-color;
+  }
 }
 .enlace{
   display:block;
@@ -86,8 +90,8 @@
 @media all and (min-width:1200px) {
   .titulo, .logo {
     margin-left: 138px;
-}
+  }
   .actions {
     margin-right: 138px;
-}
+  }
 }
