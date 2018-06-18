@@ -19,11 +19,30 @@
 }
 
 .title-sprint {
-  color: $color-light;
   font-size: $size-m;
   font-family: $font-title;
   font-weight: $weight-medium;
   text-transform: $font-uppercase;
+
+  &:hover {
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+    @keyframes title {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.link-title {
+  text-decoration: none;
+  color: $color-light;
 }
 
 .menu-container {
@@ -51,6 +70,17 @@
   text-align: center;
   display: inline;
 
+  &:hover {
+    animation-name: intro;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+    @keyframes intro {
+      0% {transform: scale(1);}
+      50% {transform: scale(2);}
+      100% {transform: scale(1);}
+    }
+  }
 }
 
 .link-menu {
@@ -58,6 +88,8 @@
   color: $color-light;
   text-align: center;
   text-transform: $font-uppercase;
+
+
 }
 
 /* 768px HEADER*/
