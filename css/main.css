@@ -42,6 +42,7 @@ body {
 }
 
 .title-sprint {
+  color: #fff;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -303,6 +304,28 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   height: 300px;
+}
+
+.title-sprint {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.title-sprint:hover {
+  -webkit-animation-name: title;
+  animation-name: title;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.link-title {
+  text-decoration: none;
+  color: #fff;
 }
 
 .contacto {
@@ -1037,6 +1060,18 @@ p {
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@keyframes title {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
