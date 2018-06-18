@@ -131,6 +131,7 @@
 
 .quienesSomos {
   margin: 30px auto 60px;
+  display: grid;
 
   @media all and (min-width: 1200px) {
     margin-right: 138px;

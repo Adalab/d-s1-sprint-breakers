@@ -386,6 +386,7 @@ body {
   text-align: center;
 }/* QUIENES SOMOS */.quienesSomos {
   margin: 30px auto 60px;
+  display: grid;
 }
 
 .quiensomosh2 {
